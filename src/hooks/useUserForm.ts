@@ -21,8 +21,10 @@ export const useUserForm = () => {
 
   return {
     errors,
-    registerName,
-    registerGender,
+    register: {
+      name: registerName,
+      gender: registerGender,
+    },
     handleSubmit: handleSubmit,
   };
 }; 
